@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="stylesheet" href="../static/css/search.css">
+
+    <title>Ndeiya Plots</title>
+</head>
+<body>
+
+<div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h3>Harunani & Associates </h3>
+                        <p>Licensed and Chatered Surveyors</p>
+
+                    </div>
+                    <div class="col-md-9 register-right">
+
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Ndeiya Land Records</h3>
+                                <div class="row register-form" id="buttons">
+                                    <div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         Nachu Ndacha
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+     {#<div class="card-body">  #}
+
+                                          <form action="/nachu_ndacha" method="post">
+
+                                            <div class="form-group">
+                                            <input class="form-control form-control-lg form-control-borderless" type="search" name="parcel_id" placeholder="Enter Parcel Number" value={{request.form.parcel_id}}>
+                                            </div>
+                                              <div>
+                                                <input type="submit" class="btnRegister"  value="Search"/>
+                                             </div>
+
+                                         </form>
+     {#  </div> #}
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Nachu Mikuyuini
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+     {#  <div class="card-body">#}
+
+
+                             <form action="/nachu_mikuyuini" method="post">
+{#
+                                          <div class="card card-body">
+#}
+                                            <div class="form-group">
+                                            <input class="form-control form-control-lg form-control-borderless" type="search" name="parcel_id" placeholder="Enter Parcel Number" value={{request.form.parcel_id}}>
+                                            </div>
+                                              <div>
+                                                <input type="submit" class="btnRegister"  value="Search"/>
+                                             </div>
+{#
+                                            </div>
+#}
+                                         </form>
+
+     {# </div>#}
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Nguirubi Ndiuni
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+{#
+      <div class="card-body">
+#}
+
+                                          <form action="/nguirubi_ndiuni" method="post">
+{#
+                                          <div class="card card-body">
+#}
+                                            <div class="form-group">
+                                            <input class="form-control form-control-lg form-control-borderless" type="search" name="parcel_id" placeholder="Enter Parcel Number" value={{request.form.parcel_id}}>
+                                            </div>
+                                              <div>
+                                                <input type="submit" class="btnRegister"  value="Search"/>
+                                             </div>
+{#
+                                            </div>
+#}
+                                         </form>
+{#
+      </div>
+#}
+    </div>
+  </div>
+
+ <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+         Nguirubi Thigio
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+{#
+      <div class="card-body">
+#}
+
+
+                                        <form action="/nguirubi_thigio" method="post">
+{#
+                                          <div class="card card-body">
+#}
+                                            <div class="form-group">
+                                            <input class="form-control form-control-lg form-control-borderless" type="search" name="parcel_id" placeholder="Enter Parcel Number" value={{request.form.parcel_id}}>
+                                            </div>
+                                              <div>
+                                                <input type="submit" class="btnRegister"  value="Search"/>
+                                             </div>
+{#
+                                            </div>
+#}
+                                         </form>
+
+
+{#
+      </div>
+#}
+    </div>
+  </div>
+</div>
+
+ </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script>
+
+    $(function() {
+  $(document).click(function (event) {
+    $('.accordion').collapse('hide');
+  });
+});
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
