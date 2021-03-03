@@ -29,11 +29,11 @@ def ndeiya():
     else:
         return "The parcel number does not exist "
 
-   # conn = psycopg2.connect(database="ndeiya", user="postgres", password="1234", host="127.0.0.1", port="5432")
+    #conn = psycopg2.connect(database="ndeiya", user="postgres", password="1234", host="127.0.0.1", port="5432")
 
    # conn = psycopg2.connect("dbname='de00ksp25p6hmo' user='izhmnjetrovfjn' host='ec2-79-125-127-60.eu-west-1.compute.amazonaws.com' password='37f372b53c15af4fcb9abbb9d7c06cc28c2ad99c4af5c4351907f5e0524a0f03' ")
 
-     conn = ps.connect(database="dahtocqt98fpnm", user="vtytfkzcntychx", password="1cad7953bf8d4e762a7160a00f4044e27ad1fad3091bab5b769988ed7ee6596e", host="ec2-79-125-127-60.eu-west-1.compute.amazonaws.com", port="5432")
+    conn = psycopg2.connect(database="dahtocqt98fpnm", user="vtytfkzcntychx", password="1cad7953bf8d4e762a7160a00f4044e27ad1fad3091bab5b769988ed7ee6596e", host="ec2-79-125-127-60.eu-west-1.compute.amazonaws.com", port="5432")
 
 
 
